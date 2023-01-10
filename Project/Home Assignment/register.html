@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="styleReg.css">
+    <script src="reg.js"></script>
+    <script>
+        function myFunction() {
+          alert("You have registered with us!");
+        }
+        </script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="contactUs.html">Contact us</a>
+        <a href="aboutUs.html">About us</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </div>
+
+
+
+
+    <form action=togglemodal()>
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            
+            <label for="psw-repeat"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name:" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+
+            <label for="surname"><b>Surname</b></label>
+            <input type="text" placeholder="Enter Surname:" name="surname" id="surname" required>
+            <hr>
+
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength="5" required>
+
+            <label for="numberphone"><b>Telephone Number:</b></label>
+            <input type="number" placeholder="Telephone Number" name="numberphone" id="numberphone" required>
+            <hr>
+
+
+            <button class="registerbtn" onclick=myFunction()>Register</button>
+
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h1>Registered!</h1>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="containerSignin">
+            <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+        </div>
+    </form>
+</body>
+
+</html>
