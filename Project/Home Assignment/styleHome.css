@@ -1,0 +1,111 @@
+body {
+    background-image: url("galaxy.webp");
+    background-attachment: fixed;
+}
+
+
+
+.topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(23, 13, 63);
+    color: rgb(253, 253, 253);
+    float: left;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #333;
+    color: white;
+}
+
+
+
+.topnav p {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.reg {
+    float: right;
+}
+
+.topnav p.active {
+    background-color: #333;
+    color: white;
+}
+
+.topnav p:hover {
+    background-color: rgb(23, 13, 63);
+    color: rgb(255, 255, 255);
+
+}
+
+.carousel-inner {
+    color: red;
+}
+
+
+
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #666666;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+
+.popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+}
+
+.popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+}
+
+.popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin: .20rem;
+    font-size: 1rem;
+    color: #666666;
+    background: #ffffff;
+    border: 1px solid #666666;
+}
+
+button:hover {
+    border: 1px solid #666666;
+    background: #666666;
+    color: #ffffff;
+}
